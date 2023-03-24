@@ -1,4 +1,6 @@
 import os
+from dotenv import load_dotenv
+load_dotenv()  # take environment variables from .env.
 from pathlib import Path
 import logging
 
@@ -7,13 +9,18 @@ logging.basicConfig(
     format= "[%(asctime)s: %(levelname)s]: %(message)s"
     )
 
-PROJECT_NAME = "cli_project" # "<PROJECT_NAME>"
-REPO_NAME = "python-cli-template" # "<REPO_NAME>"
-AUTHOR_USER_NAME = "c17hawke" # "<AUTHOR_USER_NAME>"
-PACKAGE_NAME = "my_cli" # "<PACKAGE_NAME>"
-AUTHOR_EMAIL = "sunny.c17hawke@gmail.com" # "<AUTHOR_EMAIL>"
-COMMAND_NAME = PACKAGE_NAME # "<COMMAND_NAME>"
-SITE_AUTHOR = AUTHOR_USER_NAME # "<SITE_AUTHOR>"
+# update the following values as per your project other wise it will take the given default - 
+PROJECT_NAME = os.getenv("PROJECT_NAME")
+REPO_NAME = os.getenv("REPO_NAME")
+AUTHOR_USER_NAME = os.getenv("AUTHOR_USER_NAME")
+PACKAGE_NAME = os.getenv("PACKAGE_NAME")
+AUTHOR_EMAIL = os.getenv("AUTHOR_EMAIL")
+COMMAND_NAME = os.getenv("COMMAND_NAME")
+SITE_AUTHOR = os.getenv("SITE_AUTHOR")
+
+if not all([PROJECT_NAME, REPO_NAME, AUTHOR_USER_NAME, PACKAGE_NAME, AUTHOR_EMAIL, COMMAND_NAME, SITE_AUTHOR]):
+    raise Exception("One or more environment variables are not set")
+
 
 logging.info(f"Creating project by name: {PROJECT_NAME}")
 
