@@ -29,4 +29,5 @@ setuptools.setup(
         "console_scripts": [
             f"{COMMAND_NAME} = {PACKAGE_NAME}.cli:main",
         ]
+    }
 )
