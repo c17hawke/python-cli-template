@@ -17,8 +17,7 @@ by choosing this as a project template while creating a new repository
     ```
     NOTE: update the repo-name here
 
-- Click on create code spaces or selec available codespaces as shown below - 
-    image.png
+- Click on create code spaces or select available codespaces.
 
 ### STEP 03: IMPORTANT: Create `.env` file in the root of the project and paste the following content - 
 
@@ -45,9 +44,16 @@ use template.py to create the other required files by running the following comm
 python template.py
 ```
 
+### STEP 05: Add a `LICENSE` file
+
+- Go to your github repository and click on `Add file` and then select `Create new file`.
+- Now start typing the name of the file as `LICENSE` and then you'll see the option of selecting the desired template. 
+
+NOTE: You can choose MIT License if you are not sure.
+
 > This completes the basic skeleton of the project!!
 
-### STEP 05: Create and install dependencies - 
+### STEP 06: Create and install dependencies - 
 
 - It is assumed that `anaconda` or `miniconda` is intalled in the system. If not then please do your setup by following this tutorial - https://youtu.be/bVM-QujJ0AI
 
