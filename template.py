@@ -17,6 +17,7 @@ PACKAGE_NAME = os.getenv("PACKAGE_NAME")
 AUTHOR_EMAIL = os.getenv("AUTHOR_EMAIL")
 COMMAND_NAME = os.getenv("COMMAND_NAME")
 SITE_AUTHOR = os.getenv("SITE_AUTHOR")
+PYTHON_VERSION = os.getenv("PYTHON_VERSION")
 
 if not all([PROJECT_NAME, REPO_NAME, AUTHOR_USER_NAME, PACKAGE_NAME, AUTHOR_EMAIL, COMMAND_NAME, SITE_AUTHOR]):
     raise Exception("One or more environment variables are not set")
@@ -70,19 +71,26 @@ class UpdateContent:
                 f.write(self.content)
             logging.info(f"content updated succesfully and written to: {self.path}")
 
-path_and_kwargs = {"setup.py":{
+path_and_kwargs = {
+    "setup.py":{
     "REPO_NAME": REPO_NAME,
     "AUTHOR_USER_NAME": AUTHOR_USER_NAME,
     "PACKAGE_NAME": PACKAGE_NAME,
     "AUTHOR_EMAIL": AUTHOR_EMAIL,
     "COMMAND_NAME": COMMAND_NAME
     },
+    
     "mkdocs.yml": {
     "PACKAGE_NAME": PACKAGE_NAME, 
     "SITE_AUTHOR": SITE_AUTHOR
     },
+    
     "setup.cfg": {
     "PACKAGE_NAME": PACKAGE_NAME
+    },
+
+    "init_setup.sh": {
+    "PYTHON_VERSION": PYTHON_VERSION
     } 
     }
 
