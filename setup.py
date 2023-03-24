@@ -5,11 +5,11 @@ with open("README.md", "r", encoding="utf-8") as f:
 
 __version__ = "0.0.0"
 
-REPO_NAME = "<REPO_NAME>"
-AUTHOR_USER_NAME = "<AUTHOR_USER_NAME>"
-PACKAGE_NAME = "<PACKAGE_NAME>"
-AUTHOR_EMAIL = "<AUTHOR_EMAIL>"
-COMMAND_NAME = "<COMMAND_NAME>"
+REPO_NAME = "python-cli-template"
+AUTHOR_USER_NAME = "c17hawke"
+PACKAGE_NAME = "my_cli"
+AUTHOR_EMAIL = "sunny.c17hawke@gmail.com"
+COMMAND_NAME = "my_cli"
 
 setuptools.setup(
     name=PACKAGE_NAME,
@@ -24,7 +24,7 @@ setuptools.setup(
         "Bug Tracker": f"https://github.com/{AUTHOR_USER_NAME}/{REPO_NAME}/issues",
     },
     package_dir={"": "src"},
-    packages=setuptools.find_packages(where="src")
+    packages=setuptools.find_packages(where="src"),
     entry_points={
         "console_scripts": [
             f"{COMMAND_NAME} = {PACKAGE_NAME}.cli:main",
