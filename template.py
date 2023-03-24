@@ -13,11 +13,14 @@ logging.basicConfig(
 PROJECT_NAME = os.getenv("PROJECT_NAME")
 REPO_NAME = os.getenv("REPO_NAME")
 AUTHOR_USER_NAME = os.getenv("AUTHOR_USER_NAME")
+AUTHOR_NAME = os.getenv("AUTHOR_NAME")
 PACKAGE_NAME = os.getenv("PACKAGE_NAME")
 AUTHOR_EMAIL = os.getenv("AUTHOR_EMAIL")
 COMMAND_NAME = os.getenv("COMMAND_NAME")
 SITE_AUTHOR = os.getenv("SITE_AUTHOR")
+GITHUB_USER_NAME = os.getenv("GITHUB_USER_NAME")
 PYTHON_VERSION = os.getenv("PYTHON_VERSION")
+YEAR = os.getenv("YEAR")
 
 if not all([PROJECT_NAME, REPO_NAME, AUTHOR_USER_NAME, PACKAGE_NAME, AUTHOR_EMAIL, COMMAND_NAME, SITE_AUTHOR]):
     raise Exception("One or more environment variables are not set")
@@ -82,7 +85,11 @@ path_and_kwargs = {
     
     "mkdocs.yml": {
     "PACKAGE_NAME": PACKAGE_NAME, 
-    "SITE_AUTHOR": SITE_AUTHOR
+    "SITE_AUTHOR": SITE_AUTHOR,
+    "GITHUB_USER_NAME": GITHUB_USER_NAME,
+    "YEAR": YEAR,
+    "REPO_NAME": REPO_NAME,
+    "AUTHOR_NAME": AUTHOR_NAME
     },
     
     "setup.cfg": {
