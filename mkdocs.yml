@@ -1,17 +1,16 @@
 # Project information
-site_name: IPYNBrenderer
+site_name: <package_name>
 # defeine TOC or order of website-
 nav:
   - Home: index.md
-  - APIreference: APIreference.md
 
 site_author: Sunny Bhaveen Chandra
 site_description: >-
   A library for rendering YouTube and reference sites in Jupyter notebooks
 
 # Repository
-repo_name: c17hawke/IPYNBrenderer
-repo_url: https://github.com/c17hawke/IPYNBrenderer
+repo_name: c17hawke/<repo-name>
+repo_url: https://github.com/c17hawke/<repo-name>
 
 # Configuration
 theme:
@@ -71,4 +70,4 @@ plugins:
   - search
 
 copyright: |
-  &copy; 2022 <a href="https://github.com/c17hawke"  target="_blank" rel="noopener">Sunny Bhaveen Chandra</a>
+  &copy; 2023 <a href="https://github.com/c17hawke"  target="_blank" rel="noopener">Sunny Bhaveen Chandra</a>
