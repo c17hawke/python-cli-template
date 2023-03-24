@@ -1,10 +1,10 @@
 # Project information
-site_name: <package_name>
+site_name: <PACKAGE_NAME>
 # defeine TOC or order of website-
 nav:
   - Home: index.md
 
-site_author: Sunny Bhaveen Chandra
+site_author: <SITE_AUTHOR>
 site_description: >-
   A library for rendering YouTube and reference sites in Jupyter notebooks
 
