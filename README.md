@@ -1,7 +1,6 @@
 # python cli template
 
-Documentation: https://c17hawke.github.io/<repo-name>/
-project board - `<add project board link if any>`
+Documentation: `https://c17hawke.github.io/<repo-name>/<add project board link if any>`
 
 ## STEPS - 
 
@@ -23,14 +22,17 @@ by choosing this as a project template while creating a new repository
 
 ```ini
 # update the following values as per your project
-PROJECT_NAME="<YOUR_PROJECT_NAME>"
-REPO_NAME="<YOUR_REPO_NAME>"
-AUTHOR_USER_NAME="YOUR_<AUTHOR_USER_NAME>"
-PACKAGE_NAME="<YOUR_PACKAGE_NAME>"
-AUTHOR_EMAIL="<YOUR_AUTHOR_EMAIL>"
-COMMAND_NAME="<YOUR_COMMAND_NAME>"
-SITE_AUTHOR="<YOUR_SITE_AUTHOR>"
-PYTHON_VERSION=3.8 # update as per your requirements
+PROJECT_NAME=<PROJECT_NAME>
+REPO_NAME=<REPO_NAME>
+AUTHOR_USER_NAME=<AUTHOR_USER_NAME>
+AUTHOR_NAME=<AUTHOR_NAME>
+PACKAGE_NAME=<PACKAGE_NAME>
+AUTHOR_EMAIL=<AUTHOR_EMAIL>
+COMMAND_NAME=${PACKAGE_NAME} # update as per your need, Here it is assumed that command name is package name
+SITE_AUTHOR=${AUTHOR_USER_NAME} # update as per your need, Here it is assumed that site author is author user name
+GITHUB_USER_NAME=${AUTHOR_USER_NAME} # update as per your need, Here it is assumed that github user name is author user name
+PYTHON_VERSION=<PYTHON_VERSION>  
+YEAR=<YEAR>
 ```
 
 > **WARNING: if this step is skipped then exception will be raised**
