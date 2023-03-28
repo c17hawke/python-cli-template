@@ -4,7 +4,7 @@ site_name: <PACKAGE_NAME>
 nav:
   - Home: index.md
 
-site_author: <SITE_AUTHOR>
+site_author: <AUTHOR_NAME>
 site_description: >-
   A library for rendering YouTube and reference sites in Jupyter notebooks
 
