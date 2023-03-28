@@ -7,7 +7,7 @@ name = "<REPO_NAME>"
 version = "0.0.1"
 description = "<COMMAND_NAME> is a Python-based command-line interface (CLI) utility."
 authors = [
-    {name = "<AUTHOR_USER_NAME>", email = "<AUTHOR_EMAIL>"},
+    {name = "<GITHUB_USER_NAME>", email = "<AUTHOR_EMAIL>"},
 ]
 dependencies = ["requests==2.28.2"]
 requires-python = ">=3.7"
@@ -35,9 +35,9 @@ testing = [
 <PACKAGE_NAME> = "<COMMAND_NAME>.cli:main"
 
 [project.urls]
-"Bug Tracker" = "https://github.com/<AUTHOR_USER_NAME>/<REPO_NAME>/issues"
-"Documentation" = "https://<AUTHOR_USER_NAME>.github.io/<REPO_NAME>/"
-"Source" = "https://github.com/<AUTHOR_USER_NAME>/<REPO_NAME>"
+"Bug Tracker" = "https://github.com/<GITHUB_USER_NAME>/<REPO_NAME>/issues"
+"Documentation" = "https://<GITHUB_USER_NAME>.github.io/<REPO_NAME>/"
+"Source" = "https://github.com/<GITHUB_USER_NAME>/<REPO_NAME>"
 
 [tool.pytest.ini_options]
 testpaths = [
