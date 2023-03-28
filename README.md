@@ -1,4 +1,5 @@
 # python cli template
+# How to use this template?
 
 Documentation: `https://c17hawke.github.io/<repo-name>/<add project board link if any>`
 
@@ -24,15 +25,14 @@ by choosing this as a project template while creating a new repository
 # update the following values as per your project
 PROJECT_NAME=<PROJECT_NAME>
 REPO_NAME=<REPO_NAME>
-AUTHOR_USER_NAME=<AUTHOR_USER_NAME>
+GITHUB_USER_NAME=<GITHUB_USER_NAME>
 AUTHOR_NAME=<AUTHOR_NAME>
 PACKAGE_NAME=<PACKAGE_NAME>
 AUTHOR_EMAIL=<AUTHOR_EMAIL>
 COMMAND_NAME=${PACKAGE_NAME} # update as per your need, Here it is assumed that command name is package name
-SITE_AUTHOR=${AUTHOR_USER_NAME} # update as per your need, Here it is assumed that site author is author user name
-GITHUB_USER_NAME=${AUTHOR_USER_NAME} # update as per your need, Here it is assumed that github user name is author user name
-PYTHON_VERSION=<PYTHON_VERSION>  
-YEAR=<YEAR>
+LICENCSE_NAME="MIT" # update as per your need, Here it is assumed that you choose MIT LICENSE
+PYTHON_VERSION=3.8 # update as per your need, Here it is assumed that you choose version 3.8
+YEAR=2023 # update as per your need
 ```
 
 > **WARNING: if this step is skipped then exception will be raised**
@@ -69,10 +69,9 @@ NOTE: You can choose MIT License if you are not sure.
     ```bash
     bash init_setup.sh   
     ```
-NOTE: if in case you face difficulty in running the init_setup.sh file then you can run the command mentioned in it one by one in the terminal to get the same result.
+NOTE: if in case you face difficulty in running the `init_setup.sh` file then you can run the command mentioned in it one by one in the terminal to get the same result.
 
 > This completes the environment setup of the project!!
-
 
 ### STEP 07: Now you can start the development by activating the environment
 
@@ -80,3 +79,4 @@ NOTE: if in case you face difficulty in running the init_setup.sh file then you 
     ```bash
     conda activate ./env
     ```
+> END NOTE: AFTER THE FINAL STEP UPDATE README AND DOCS FOR YOUR PROJECT!!
