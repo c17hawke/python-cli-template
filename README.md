@@ -45,7 +45,7 @@ YEAR=2023 # update as per your need
 > pip install python-dotenv
 > ```
 
-use template.py to create the other required files by running the following command - 
+Use and update `template.py` as per your requirements to create the other required files by running the following command - 
 
 ```bash 
 python template.py
@@ -79,4 +79,13 @@ NOTE: if in case you face difficulty in running the `init_setup.sh` file then yo
     ```bash
     conda activate ./env
     ```
+
+### STEP 08: Uncomment github action workflows present in `.github/workflows` directory
+
+### STEP 09: Create new elease of the project
+
+- After developement you can create release of your project to make this project available at `pypi.org`.
+- For this you will need PYPI token, which can be created from your `pypi` profile section.
+- And the above token should be added to the secret variables of the repository.
+
 > END NOTE: AFTER THE FINAL STEP UPDATE README AND DOCS FOR YOUR PROJECT!!
