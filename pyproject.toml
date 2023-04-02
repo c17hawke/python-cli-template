@@ -51,3 +51,16 @@ ignore_missing_imports = true
 [tool.flake8]
 max-line-length = 160
 exclude = "__init__.py"
+
+[tool.pyright]
+include = ["src"]
+
+exclude = ["**/node_modules",
+    "**/__pycache__",
+    "src/experimental",
+    "src/typestubs"
+]
+
+reportMissingImports = true
+reportMissingTypeStubs = false
+reportGeneralTypeIssues = false
