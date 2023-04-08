@@ -59,9 +59,18 @@ src = ["src"]
 # Allow unused variables when underscore-prefixed.
 dummy-variable-rgx = "^(_+|(_+[a-zA-Z0-9_]*[a-zA-Z0-9]+?))$"
 
-[tool.flake8]
-max-line-length = 160
-exclude = "__init__.py"
+# rules reference - https://beta.ruff.rs/docs/rules/
+select = [
+    "E9",
+    "F63",
+    "F7",
+    "F82",
+    "ANN001",
+    "ANN201",
+    "ANN202",
+    "ANN205",
+    "ANN206",
+]
 
 [tool.ruff.mccabe]
 # Unlike Flake8, default to a complexity level of 10.
