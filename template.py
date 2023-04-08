@@ -93,7 +93,10 @@ path_and_kwargs = {
 
     "init_setup.sh": {
     "PYTHON_VERSION": PYTHON_VERSION
-    } 
+    },
+    "docker-compose.yml": {
+    "PROJECT_NAME": PROJECT_NAME
+    }  
     }
 
 for path, kwargs in path_and_kwargs.items():
