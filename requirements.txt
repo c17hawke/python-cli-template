@@ -1,5 +1,4 @@
 notebook
-py-youtube
 ensure
 mkdocs-material
 ipywidgets
