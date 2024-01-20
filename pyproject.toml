@@ -33,9 +33,6 @@ testing = [
     "mypy>=1.1.1"
 ]
 
-[project.scripts]
-<PACKAGE_NAME> = "<COMMAND_NAME>.cli:main"
-
 [project.urls]
 "Bug Tracker" = "https://github.com/<GITHUB_USER_NAME>/<REPO_NAME>/issues"
 "Documentation" = "https://<GITHUB_USER_NAME>.github.io/<REPO_NAME>/"
