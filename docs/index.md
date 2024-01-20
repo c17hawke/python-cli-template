@@ -82,7 +82,7 @@ NOTE: if in case you face difficulty in running the `init_setup.sh` file then yo
 
 ### STEP 08: Uncomment github action workflows present in `.github/workflows` directory
 
-### STEP 09: Create new elease of the project
+### STEP 09: Create new release of the project
 
 - After developement you can create release of your project to make this project available at `pypi.org`.
 - For this you will need PYPI token, which can be created from your `pypi` profile section.
